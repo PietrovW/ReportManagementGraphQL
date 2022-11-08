@@ -1,12 +1,11 @@
-﻿using System;
-using ReportManagementGraphQL.Data.Entity;
+﻿using ReportManagementGraphQL.Data.Entity;
 
 namespace ReportManagementGraphQL.Repositorys
 {
 	public interface IUserRepository
 	{
 		List<User> GetAll();
-		User CreateUser(User user);
+		Task<User> CreateUserAsync(User user);
 		User GetUserById(Guid userId);
 	}
 }

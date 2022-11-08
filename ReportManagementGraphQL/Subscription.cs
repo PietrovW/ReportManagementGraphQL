@@ -1,5 +1,4 @@
-﻿using System;
-using HotChocolate;
+﻿using HotChocolate;
 using HotChocolate.Execution;
 using HotChocolate.Subscriptions;
 using HotChocolate.Types;

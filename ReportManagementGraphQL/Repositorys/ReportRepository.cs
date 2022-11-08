@@ -1,11 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using ReportManagementGraphQL.Data;
+﻿using ReportManagementGraphQL.Data;
 using ReportManagementGraphQL.Data.Entity;
 
-namespace ReportManagementGraphQL.Repositorys
-{
-    public class ReportRepository : IReportRepository
+namespace ReportManagementGraphQL.Repositorys;
+public class ReportRepository : IReportRepository
 	{
 		private readonly ReportDbContext _reportDbContext;
 		public ReportRepository(ReportDbContext reportDbContext)
@@ -18,5 +15,4 @@ namespace ReportManagementGraphQL.Repositorys
             return await _reportDbContext.ReportItems.ToListAsync();
 		}
 	}
-}
 

@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using ReportManagementGraphQL.Data.Entity;
+﻿using ReportManagementGraphQL.Data.Entity;
 using ReportManagementGraphQL.Data.EntityTypeConfiguration;
 
 namespace ReportManagementGraphQL.Data

@@ -1,6 +1,5 @@
-﻿using System;
-namespace ReportManagementGraphQL.Querys
-{
+﻿namespace ReportManagementGraphQL.Querys;
+
 	public class QueryBookData
 	{
 		public Book GetBook()
@@ -8,5 +7,5 @@ namespace ReportManagementGraphQL.Querys
 			return new Book { Title = "C# in depth", Author = new Author() { Name = "Jon Skeet" } };
 		}
 	}
-}
+
 

@@ -1,52 +1,29 @@
-﻿using System;
-using HotChocolate;
-using HotChocolate.Subscriptions;
-using ReportManagementGraphQL.Data;
+﻿using HotChocolate.Subscriptions;
 using ReportManagementGraphQL.Data.Entity;
 using ReportManagementGraphQL.Repositorys;
-using ReportManagementGraphQL.Services;
 
 namespace ReportManagementGraphQL.Querys
 {
-    public class QueryReportType
+    public sealed class QueryReportType
     {
-
-
-        public List<User> AllUsers([Service] IUserRepository userRepository)
-        { 
-       return userRepository.GetAll();
-        }
-
-
-
-        public async Task<User> GetUserById([Service] IUserRepository userRepository,
-            [Service] ITopicEventSender eventSender, Guid id)
+        private readonly IUserRepository _userRepository;
+        private readonly ITopicEventSender _eventSender;
+        public QueryReportType(IUserRepository userRepository,ITopicEventSender eventSender)
         {
-            User user = userRepository.GetUserById(id);
-            await eventSender.SendAsync("ReturnedUser", user);
+            _userRepository = userRepository;
+            _eventSender = eventSender;
+        }
+        public List<User> AllUsers()
+        { 
+          return _userRepository.GetAll();
+        }
+        
+        public async Task<User> GetUserById(Guid id)
+        {
+            User user = _userRepository.GetUserById(id);
+            await _eventSender.SendAsync("ReturnedUser", user);
             return user;
         }
-
-        // [UseFiltering]
-        //public Task<ICollection<ReportItem>> GetReportsAsync(
-        //[Service] ReportService service,
-        //CancellationToken cancellationToken)
-        //{
-        //  return null;// service.GetAllAsync(cancellationToken);
-        //}
-
-        //        public Task<ReportItem> GetReportByUserIdAsync(
-        //          [Service] IReportService service,
-        //        long idUser,
-        //      CancellationToken cancellationToken)
-        // {
-        //   return null;// service.GetByIdAsync(id, cancellationToken);
-        //}
-
-
-        //[UseDbContext(typeof(ReportDbContext))]
-        //  public IQueryable<ReportItem> GetTodoItems([ScopedService]
-        // ReportDbContext context) => context.TodoItems;
     }
 }
 

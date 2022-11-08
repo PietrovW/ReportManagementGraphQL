@@ -1,5 +1,4 @@
-﻿using System;
-using ReportManagementGraphQL.Data.Entity;
+﻿using ReportManagementGraphQL.Data.Entity;
 
 namespace ReportManagementGraphQL.Repositorys
 {

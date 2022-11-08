@@ -1,5 +1,4 @@
-﻿using System;
-namespace ReportManagementGraphQL.Querys
+﻿namespace ReportManagementGraphQL.Querys
 {
     public class QueryType : ObjectType<QueryBookData>
     {

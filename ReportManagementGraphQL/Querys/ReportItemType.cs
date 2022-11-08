@@ -1,5 +1,4 @@
-﻿using System;
-using HotChocolate.Types;
+﻿using HotChocolate.Types;
 using ReportManagementGraphQL.Data.Entity;
 
 namespace ReportManagementGraphQL.Querys

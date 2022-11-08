@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+=======
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+>>>>>>> ec9733f (commit)
 using ReportManagementGraphQL.Data.Entity;
 
 namespace ReportManagementGraphQL.Data.EntityTypeConfiguration

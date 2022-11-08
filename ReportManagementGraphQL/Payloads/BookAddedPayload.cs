@@ -1,5 +1,4 @@
-﻿using System;
-namespace ReportManagementGraphQL.Payloads
+﻿namespace ReportManagementGraphQL.Payloads
 {
 	public class BookAddedPayload
 	{

@@ -1,5 +1,4 @@
-﻿using System;
-namespace ReportManagementGraphQL.Services
+﻿namespace ReportManagementGraphQL.Services
 {
     public class ReportService : IReportService
 	{

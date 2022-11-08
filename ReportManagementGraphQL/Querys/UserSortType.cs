@@ -1,5 +1,4 @@
-﻿using System;
-using HotChocolate.Data.Sorting;
+﻿using HotChocolate.Data.Sorting;
 using ReportManagementGraphQL.Data.Entity;
 
 namespace ReportManagementGraphQL.Querys
