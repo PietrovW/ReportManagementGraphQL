@@ -1,0 +1,71 @@
+﻿<Properties StartupConfiguration="{02FEB45F-6A3E-4D52-BECF-1FA4CB471429}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReportManagementGraphQL/Querys/MutationType.cs">
+    <Files>
+      <File FileName="ReportManagementGraphQL/Subscription.cs" Line="10" Column="18" />
+      <File FileName="ReportManagementGraphQL/Data/Entity/Reporttem.cs" Line="9" Column="28" />
+      <File FileName="ReportManagementGraphQL/Program.cs" Line="22" Column="35" />
+      <File FileName="ReportManagementGraphQL/Data/EntityTypeConfiguration/UserConfiguration.cs" Line="31" Column="19" />
+      <File FileName="ReportManagementGraphQL/Data/EntityTypeConfiguration/ReportItemConfiguration.cs" Line="26" Column="47" />
+      <File FileName="ReportManagementGraphQL/Querys/Query.cs" Line="11" Column="18" />
+      <File FileName="ReportManagementGraphQL/Querys/ReportItemType.cs" Line="7" Column="29" />
+      <File FileName="ReportManagementGraphQL/Querys/UserType.cs" Line="7" Column="15" />
+      <File FileName="ReportManagementGraphQL/Repositorys/ReportRepository.cs" Line="19" Column="4" />
+      <File FileName="ReportManagementGraphQL/Services/ReportService.cs" Line="8" Column="4" />
+      <File FileName="ReportManagementGraphQL/Services/IReportService.cs" Line="4" Column="33" />
+      <File FileName="ReportManagementGraphQL/Data/ReportDbContext.cs" Line="12" Column="39" />
+      <File FileName="ReportManagementGraphQL/Querys/UserSortType.cs" Line="11" Column="15" />
+      <File FileName="ReportManagementGraphQL/Repositorys/UserRepository.cs" Line="18" Column="1" />
+      <File FileName="ReportManagementGraphQL/Querys/Query.cs" Line="11" Column="18" />
+      <File FileName="ReportManagementGraphQL/Repositorys/IReportRepository.cs" Line="8" Column="40" />
+      <File FileName="ReportManagementGraphQL/Payloads/BookAddedPayload.cs" Line="1" Column="1" />
+      <File FileName="ReportManagementGraphQL/Querys/Mutation.cs" Line="29" Column="32" />
+      <File FileName="ReportManagementGraphQL/Querys/BookType.cs" Line="14" Column="33" />
+      <File FileName="ReportManagementGraphQL/Querys/QueryType.cs" Line="4" Column="18" />
+      <File FileName="ReportManagementGraphQL/Querys/QueryBookData.cs" Line="7" Column="1" />
+      <File FileName="ReportManagementGraphQL/Mutation.cs" Line="13" Column="30" />
+      <File FileName="ReportManagementGraphQL/Querys/AuthorType.cs" Line="4" Column="25" />
+      <File FileName="ReportManagementGraphQL/Repositorys/IUserRepository.cs" Line="9" Column="6" />
+      <File FileName="ReportManagementGraphQL/Data/Entity/User.cs" Line="6" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ReportManagementGraphQL" expanded="True">
+            <Node name="ReportManagementGraphQL" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ReportManagementGraphQL PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Mutation.cs" relfile="ReportManagementGraphQL/Mutation.cs" line="69" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Mutation.cs" relfile="ReportManagementGraphQL/Mutation.cs" line="77" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Mutation.cs" relfile="ReportManagementGraphQL/Mutation.cs" line="64" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/QueryData.cs" relfile="ReportManagementGraphQL/Querys/QueryData.cs" line="31" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/QueryData.cs" relfile="ReportManagementGraphQL/Querys/QueryData.cs" line="21" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/MutationType.cs" relfile="ReportManagementGraphQL/Querys/MutationType.cs" line="14" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/QueryType.cs" relfile="ReportManagementGraphQL/Querys/QueryType.cs" line="7" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/QueryType.cs" relfile="ReportManagementGraphQL/Querys/QueryType.cs" line="9" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/QueryBookData.cs" relfile="ReportManagementGraphQL/Querys/QueryBookData.cs" line="7" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Mutation.cs" relfile="ReportManagementGraphQL/Mutation.cs" line="14" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/MutationType.cs" relfile="ReportManagementGraphQL/Querys/MutationType.cs" line="20" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/QueryReportType.cs" relfile="ReportManagementGraphQL/Querys/QueryReportType.cs" line="34" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/QueryReportType.cs" relfile="ReportManagementGraphQL/Querys/QueryReportType.cs" line="24" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Repositorys/UserRepository.cs" relfile="ReportManagementGraphQL/Repositorys/UserRepository.cs" line="18" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Repositorys/UserRepository.cs" relfile="ReportManagementGraphQL/Repositorys/UserRepository.cs" line="29" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Repositorys/UserRepository.cs" relfile="ReportManagementGraphQL/Repositorys/UserRepository.cs" line="22" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/QueryReportType.cs" relfile="ReportManagementGraphQL/Querys/QueryReportType.cs" line="16" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Querys/MutationType.cs" relfile="ReportManagementGraphQL/Querys/MutationType.cs" line="19" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Subscription.cs" relfile="ReportManagementGraphQL/Subscription.cs" line="15" column="1" />
+      <Breakpoint file="/Users/piotrwalacik/Projects/ReportManagementGraphQL/ReportManagementGraphQL/Subscription.cs" relfile="ReportManagementGraphQL/Subscription.cs" line="23" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
