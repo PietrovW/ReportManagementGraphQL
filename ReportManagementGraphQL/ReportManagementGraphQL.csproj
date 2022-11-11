@@ -58,6 +58,7 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Data\Entity\" />
+    <Folder Include="Migrations" />
     <Folder Include="Querys\" />
     <Folder Include="Data\EntityTypeConfiguration\" />
     <Folder Include="Mutations\" />

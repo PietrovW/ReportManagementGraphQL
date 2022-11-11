@@ -1,14 +1,11 @@
 ﻿using ReportManagementGraphQL.Data.Entity;
 using ReportManagementGraphQL.Data.EntityTypeConfiguration;
 
-namespace ReportManagementGraphQL.Data
-{
-	public class ReportDbContext : DbContext
+namespace ReportManagementGraphQL.Data;
+public class ReportDbContext : DbContext
 	{
 		public DbSet<ReportItem> ReportItems => Set<ReportItem>();
-
 		public DbSet<User> Users => Set<User>();
-
 		public ReportDbContext(DbContextOptions<ReportDbContext> options)
 		: base(options) { }
 
@@ -18,5 +15,4 @@ namespace ReportManagementGraphQL.Data
 			modelBuilder.ApplyConfiguration(new ReportItemConfiguration());
 		}
 	}
-}
 

@@ -4,8 +4,9 @@ using ReportManagementGraphQL.Querys;
 using ReportManagementGraphQL.Repositorys;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddDbContext<ReportDbContext>(opt => opt.UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()));
+string connectionString = builder.Configuration.GetConnectionString("DbDatabase");
+builder.Services.AddDbContextFactory<ReportDbContext>(options =>
+ options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 builder.Services.AddTransient<IReportRepository, ReportRepository>();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 

@@ -4,15 +4,15 @@ using ReportManagementGraphQL.Data.Entity;
 namespace ReportManagementGraphQL.Repositorys;
 public class ReportRepository : IReportRepository
 	{
-		private readonly ReportDbContext _reportDbContext;
-		public ReportRepository(ReportDbContext reportDbContext)
+		private readonly ReportDbContext _context;
+		public ReportRepository(IDbContextFactory<ReportDbContext> _contextFactory)
 		{
-			_reportDbContext = reportDbContext;
+			_context = _contextFactory.CreateDbContext();
 		}
 
         public async Task<List<ReportItem>> GetAll()
 		{
-            return await _reportDbContext.ReportItems.ToListAsync();
+            return await _context.ReportItems.ToListAsync();
 		}
 	}
 

@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-﻿using System;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-=======
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
->>>>>>> ec9733f (commit)
 using ReportManagementGraphQL.Data.Entity;
 
 namespace ReportManagementGraphQL.Data.EntityTypeConfiguration
@@ -18,21 +12,23 @@ namespace ReportManagementGraphQL.Data.EntityTypeConfiguration
             builder.Property(t => t.CreatedOn)
                     .IsRequired()
                     .HasColumnName("created_on")
-                    .ValueGeneratedOnAddOrUpdate();
+                    .ValueGeneratedOnAdd();
             builder.Property(t => t.UserName)
                     .IsRequired()
-                    .ValueGeneratedOnAddOrUpdate()
+                    .HasMaxLength(200)
+                    .IsUnicode()
                     .HasColumnName("user_name");
             builder.Property(t => t.Email)
                     .IsRequired()
-                    .ValueGeneratedOnAddOrUpdate()
+                    .HasMaxLength(200)
+                    .IsUnicode()
                     .HasColumnName("email");
-            builder.HasMany(c => c.Reports)
-                    .WithOne(e => e.User);
-          //  builder.Property(a => a.RowVersion)
-            //        .IsRowVersion()
-              //      .IsConcurrencyToken()
-                //    .ValueGeneratedOnAddOrUpdate();
+            //builder.HasMany(c => c.Reports)
+              //      .WithOne(e => e.User);
+            builder.Property(t => t.RowVersion)
+                    .IsRowVersion()
+                    .IsConcurrencyToken()
+                    .ValueGeneratedOnAddOrUpdate();
         }
     }
 }

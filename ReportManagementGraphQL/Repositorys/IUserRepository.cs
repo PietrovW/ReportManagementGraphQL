@@ -7,6 +7,7 @@ namespace ReportManagementGraphQL.Repositorys
 		List<User> GetAll();
 		Task<User> CreateUserAsync(User user);
 		User GetUserById(Guid userId);
+		Task<int> SaveChangesAsync();
 	}
 }
 
