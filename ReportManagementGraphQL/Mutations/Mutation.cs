@@ -14,7 +14,7 @@ public sealed class Mutation
         
         public async Task<UserPayload> CreateUser(UserInput input)
         {
-            var createdUser = await _userRepository.CreateUserAsync(new User(){ Id = Guid.NewGuid(),UserName =input.userName,Email=input.email, CreatedOn = DateTime.UtcNow});
+            var createdUser = await _userRepository.CreateUserAsync(new User(){ Id = Guid.NewGuid(),UserName =input.UserName,Email=input.Email, CreatedOn = DateTime.UtcNow});
             await _userRepository.SaveChangesAsync();
 
             return new UserPayload(createdUser);

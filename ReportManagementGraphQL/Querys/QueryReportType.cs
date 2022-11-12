@@ -1,29 +1,10 @@
-﻿using HotChocolate.Subscriptions;
-using ReportManagementGraphQL.Data.Entity;
-using ReportManagementGraphQL.Repositorys;
+namespace ReportManagementGraphQL.Querys;
 
-namespace ReportManagementGraphQL.Querys
+public class QueryReportType: ObjectType<QueryReport>
 {
-    public sealed class QueryReportType
+    protected override void Configure(IObjectTypeDescriptor<QueryReport> descriptor)
     {
-        private readonly IUserRepository _userRepository;
-        private readonly ITopicEventSender _eventSender;
-        public QueryReportType(IUserRepository userRepository,ITopicEventSender eventSender)
-        {
-            _userRepository = userRepository;
-            _eventSender = eventSender;
-        }
-        public async Task<List<User>> AllUsers()
-        { 
-          return await _userRepository.GetAllAsync();
-        }
-        
-        public async Task<User> GetUserById(Guid id)
-        {
-            User user = _userRepository.GetUserById(id);
-            await _eventSender.SendAsync("ReturnedUser", user);
-            return user;
-        }
+        descriptor.Field(t => t.AllUsers());
+        descriptor.Field(t=>t.GetUserById(default));
     }
 }
-

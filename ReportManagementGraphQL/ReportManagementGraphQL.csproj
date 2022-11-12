@@ -7,15 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HotChocolate" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Abstractions" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Data" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Language" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Language.Utf8" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Subscriptions" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Subscriptions.InMemory" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Types" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Types.Filters" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Types.Mutations" Version="13.0.0-preview.79" />
+    <PackageReference Include="HotChocolate.Validation" Version="13.0.0-preview.79" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="HotChocolate" Version="12.5.0" />
-    <PackageReference Include="HotChocolate.Subscriptions" Version="12.5.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.0" />
-    <PackageReference Include="HotChocolate.AspNetCore" Version="12.5.0" />
-    <PackageReference Include="HotChocolate.Language.Utf8" Version="12.5.0" />
-    <PackageReference Include="HotChocolate.Language.Visitors" Version="12.5.0" />
-    <PackageReference Include="HotChocolate.Subscriptions.InMemory" Version="12.5.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -27,7 +34,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.1" />
-    <PackageReference Include="HotChocolate.Data" Version="12.5.0" />
   </ItemGroup>
 
   <ItemGroup>
