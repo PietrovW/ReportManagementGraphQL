@@ -10,9 +10,9 @@ public class UserRepository : IUserRepository
 			_reportDbContext = reportDbContext.CreateDbContext();
 		}
 
-		public List<User> GetAll()
+		public async Task<List<User>> GetAllAsync()
 		{
-            return _reportDbContext.Users.ToList();
+            return await _reportDbContext.Users.ToListAsync();
 		}
 
 		public async Task<User> CreateUserAsync(User user)

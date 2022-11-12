@@ -13,9 +13,9 @@ namespace ReportManagementGraphQL.Querys
             _userRepository = userRepository;
             _eventSender = eventSender;
         }
-        public List<User> AllUsers()
+        public async Task<List<User>> AllUsers()
         { 
-          return _userRepository.GetAll();
+          return await _userRepository.GetAllAsync();
         }
         
         public async Task<User> GetUserById(Guid id)
